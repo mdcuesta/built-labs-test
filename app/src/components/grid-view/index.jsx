@@ -71,6 +71,7 @@ GridView.propTypes = {
   users: PropTypes.array.isRequired,
   page: PropTypes.number.isRequired,
   size: PropTypes.number.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = (state) => {

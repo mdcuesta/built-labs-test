@@ -79,6 +79,8 @@ class ScrollView extends Component {
 ScrollView.propTypes = {
   classes: PropTypes.object.isRequired,
   users: PropTypes.array.isRequired,
+  loading: PropTypes.bool.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = (state) => {

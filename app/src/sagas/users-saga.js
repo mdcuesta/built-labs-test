@@ -3,7 +3,7 @@ import { raiseError } from '../actions/util-action';
 import { FETCH_USERS, fetchUsersStarted, fetchUsersCompleted } from '../actions/users-action';
 import { fetchUsers } from '../services/users-service';
 
-function* fetchUsersHandler(action) {
+export function* fetchUsersHandler(action) {
   try {
     yield put(fetchUsersStarted(action.page, action.size, action.append));
 

@@ -32,6 +32,7 @@ Pager.propTypes = {
   page: PropTypes.number.isRequired,
   size: PropTypes.number.isRequired,
   history: PropTypes.object.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
 

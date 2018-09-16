@@ -5,9 +5,9 @@ const router = express.Router();
 const SEED = 'BuiltLabs';
 const USER_API_URL = 'https://randomuser.me/api';
 
-router.get('/', function(req, res) {
-  const page = req.query.page;
-  const size = req.query.size;
+router.get('/', function(req, res, next) {
+  const page = req.query.page || 1;
+  const size = req.query.size || 12;
 
   axios.get(USER_API_URL, { params: {
     page,
@@ -22,12 +22,12 @@ router.get('/', function(req, res) {
         page: response.data.info.page,
       },
     });
-  }).catch((error) => {
-    // TODO: log error
+  }).catch((err) => {
     res.json({
       success: false,
       message: 'An error has occured.',
     });
+    next(err);
   });
 });
 

@@ -6,6 +6,8 @@
     "@material-ui/core": "^3.0.3",
     "@material-ui/icons": "^3.0.1",
     "axios": "^0.18.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-infinite-scroller": "^1.2.1",

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import { connect } from 'react-redux';
 
@@ -13,6 +14,10 @@ function ProgressBar(props) {
     )
   }
 }
+
+ProgressBar.propTypes = {
+  show: PropTypes.bool.isRequired,
+};
 
 const mapStateToProps = (state) => {
   return {

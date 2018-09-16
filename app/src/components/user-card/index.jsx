@@ -54,7 +54,7 @@ function UserCard(props) {
               <Typography component="h4">
                 {`${user.location.city}, ${user.location.state}`.toUpperCase()}
               </Typography>
-              <Typography component="h4">
+              <Typography component="h5">
                 {user.email}
               </Typography>
             </CardContent>
